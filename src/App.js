@@ -23,14 +23,14 @@ function App() {
   useEffect(() => {
   // will only going to run once when app component loads....
 
-  auth.onAuthStateChanged(authUser => {
+    auth.onAuthStateChanged(authUser => {
 
-    if(authUser){
-      dispatch({type: ACTIONS.SET_USER, user: authUser});
-    }else{
-      dispatch({type: ACTIONS.SET_USER, user: null});
-    }
-  })
+      if(authUser){
+        dispatch({type: ACTIONS.SET_USER, user: authUser});
+      }else{
+        dispatch({type: ACTIONS.SET_USER, user: null});
+      }
+    })
   }, [])
 
   return (
