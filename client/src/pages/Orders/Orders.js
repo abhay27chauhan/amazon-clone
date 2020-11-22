@@ -9,8 +9,7 @@ function Orders() {
     const [orders, setOrders] = useState([]);
     
     useEffect(() => {
-        let isMounted = true
-        if(user && isMounted){
+        if(user){
             db
             .collection('users')
             .doc(user?.uid)
@@ -25,7 +24,6 @@ function Orders() {
         }else{
             setOrders([])
         }
-        return () => { isMounted = false };
     }, [user])
 
     return (

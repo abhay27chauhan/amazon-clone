@@ -5,7 +5,7 @@ import { Link, useHistory } from 'react-router-dom';
 import CheckoutProduct from '../../components/CheckoutProduct/CheckoutProduct';
 import { ACTIONS, getBasketTotal } from '../../Hooks/reducer';
 import { useStateValue } from '../../Hooks/stateProvider';
-import axios from '../../axios';
+import axios from 'axios';
 import './Payment.css';
 import { db } from '../../firebase';
 
