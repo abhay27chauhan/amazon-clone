@@ -13,12 +13,14 @@ function Home() {
                 />
                 <div className="home__row">
                     <Product 
+                        id="12321341"
                         title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
                         price={29.99}
                         image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
                         rating={5}
                     />
                     <Product 
+                        id="49538094"
                         title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
                         price={239}
                         image="https://images-na.ssl-images-amazon.com/images/I/41dIhGZ8qWL.jpg"
