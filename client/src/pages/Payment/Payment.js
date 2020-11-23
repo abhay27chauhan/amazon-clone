@@ -21,7 +21,7 @@ function Payment() {
     const[disabled, setDisabled] = useState(true);
     const[processing, setProcessing] = useState(false);
     const[succeeded, setSucceeded] = useState(false);
-    const[clientSecret, setClientSecret] = useState(true);
+    const[clientSecret, setClientSecret] = useState(null);
 
     useEffect(() => {
         const getClientSecret = async () => {
@@ -99,7 +99,7 @@ function Payment() {
                         <h3>Review items and delivery</h3>
                     </div>
                     <div className="payment__items">
-                        {basket.map(({id, ...otherItemProps}) => (<CheckoutProduct id = {id} {...otherItemProps}/>))}
+                        {basket.map(({id, ...otherItemProps}, i) => (<CheckoutProduct key = {i} id = {id} {...otherItemProps}/>))}
                     </div>
                 </div>
                 <div className="payment__section">

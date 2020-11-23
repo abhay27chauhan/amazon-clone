@@ -12,7 +12,8 @@ function Home() {
                     alt=""
                 />
                 <div className="home__row">
-                    <Product 
+                    <Product
+                        key="1" 
                         id="12321341"
                         title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
                         price={29.99}
@@ -20,8 +21,9 @@ function Home() {
                         rating={5}
                     />
                     <Product 
+                        key="2"
                         id="49538094"
-                        title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
+                        title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
                         price={239}
                         image="https://images-na.ssl-images-amazon.com/images/I/41dIhGZ8qWL.jpg"
                         rating={4}
@@ -29,6 +31,7 @@ function Home() {
                 </div>
                 <div className="home__row">
                     <Product 
+                        key="3"
                         id="4903850"
                         title="Samsung LC49G90SSUXEN 49' Curved LED Gaming Monitor"
                         price={199.99}
@@ -36,6 +39,7 @@ function Home() {
                         image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
                     />
                     <Product 
+                        key="4"
                         id="23445930"
                         title="Echo Dot (3rd Gen) – Smart speaker with Alexa (Black)"
                         price={98.99}
@@ -43,6 +47,7 @@ function Home() {
                         image="https://images-na.ssl-images-amazon.com/images/I/61EXU8BuGZL._SL1100_.jpg"
                     />
                     <Product 
+                        key="5"
                         id="3254354345"
                         title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Space Grey (4th Generation)"
                         price={598.99}
@@ -52,7 +57,8 @@ function Home() {
                 </div>
                 <div className="home__row">
                     <Product 
-                        id="3254354345"
+                        key="6"
+                        id="90829332"
                         title="SAMSUNG 49-inch Odyssey G9 - QHD, 240hz, 1000R Curved Gaming Monitor, 1ms, NVIDIA G-SYNC & FreeSync, QLED (LC49G95TSSNXZA)"
                         price={1098.99}
                         rating={4}
