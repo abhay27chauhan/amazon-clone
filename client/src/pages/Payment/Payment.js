@@ -5,7 +5,7 @@ import { Link, useHistory } from 'react-router-dom';
 import CheckoutProduct from '../../components/CheckoutProduct/CheckoutProduct';
 import { ACTIONS, getBasketTotal } from '../../Hooks/reducer';
 import { useStateValue } from '../../Hooks/stateProvider';
-import axios from 'axios';
+import axios from '../../axios';
 import './Payment.css';
 import { db } from '../../firebase';
 
@@ -27,7 +27,10 @@ function Payment() {
         const getClientSecret = async () => {
             const response = await axios({
                 method: 'post',
-                url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
+                url: '/payments/create',
+                data: {
+                    basketTotal: getBasketTotal(basket)*100
+                }
             });
             setClientSecret(response.data.clientSecret)
         }
