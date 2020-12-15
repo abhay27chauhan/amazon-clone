@@ -3,8 +3,6 @@ const cors = require("cors");
 
 const stripe = require('stripe')("sk_test_51HqI5CL1eOMA3nNTjtIjmvbXddtE4lpBVjTV09QTp4Wn8VaxCzBGGiPpJLoPnzLKUMT9uGcyskPSXgQ6KqcXHsY500v8nWK2c1");
 
-// API
-
 // - App config
 const app = express();
 const port = process.env.PORT || 5000;
@@ -46,7 +44,7 @@ app.post("/payments/create", async (request, response) => {
 });
 
 // - Listen command
-app.listen((port, error )=> {
+app.listen(port, error=> {
   if (error) throw error;
   console.log('Server running on port ' + port);
 });
